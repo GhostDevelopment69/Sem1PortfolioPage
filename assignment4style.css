@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #666666;
+  background-color: rgb(142, 225, 87);
+}
+#allPage {
+  background-color: rgb(255, 255, 255);
+  width: 980px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 3px solid #777201;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #777201;
+  padding: 8px;
+}

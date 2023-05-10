@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Created by Jeremy Fernandez on March 28th, 2023-->
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta content="Assignment 4 Form Conversion!" name="description" />
+    <link href="assignment4style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="allPage">
+      <nav>
+        <a href="index.html">
+          <button>
+            <b>Back to Home</b>
+          </button>
+        </a>
+      </nav>
+      <header>
+        <img src="Source4/Centennial_College_logo.jpg" alt="College Logo" />
+        <h1>Continuing Education Course/Instructor Evaluation</h1>
+        <h4>
+          <a href="https://www.centennialcollege.ca/" target="_blank"
+            >College Homepage</a
+          >
+        </h4>
+        <p>
+          Please read each statement carefully and consider each one
+          individually. Give only <b>one answer</b> for each question.
+        </p>
+      </header>
+      <form action="mailto:jfern100@my.centennialcollege.ca" method="POST">
+        <fieldset>
+          <legend><b>Course Information:</b></legend>
+          <p>
+            <label for="CourseName/Code"><b>Course Name/Code:</b></label>
+            <input
+              id="CourseName/Code"
+              name="CourseName/Code"
+              size="25"
+              type="text"
+              required="required"
+            />
+          </p>
+          <p>
+            <label for="Semester"><b>Semester:</b></label>
+
+            <input id="optF" name="optSemester" type="radio" value="Fall" />Fall
+            <input
+              id="optW"
+              name="optSemester"
+              type="radio"
+              value="Winter"
+            />Winter
+            <input
+              id="optSS"
+              name="optSemester"
+              type="radio"
+              value="Spring/Summer"
+            />Spring/Summer &nbsp; &nbsp;
+            <label for="Year"><b>Year:</b></label>
+            <input
+              id="Year"
+              name="Year"
+              size="25"
+              type="text"
+              required="required"
+            />
+          </p>
+          <p>
+            <label for="Instructor"><b>Instructor:</b></label>
+            <input
+              id="Instructor"
+              name="Instructor"
+              size="30"
+              type="text"
+              required="required"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><b>Instructor:</b></legend>
+          <p>How would you rate the instructor's:</p>
+          <label for="Knowledge">1. <b>Knowledge</b> of the subject?</label>
+          <p>
+            <input
+              id="optE"
+              name="optKnowledge"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input id="optG" name="optKnowledge" type="radio" value="Good" />(b)
+            Good
+            <input id="optF" name="optKnowledge" type="radio" value="Fair" />(c)
+            Fair
+            <input
+              id="optNA"
+              name="optKnowledge"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+          <label for="Helpfulness">2. <b>Helpfulness</b>?</label>
+          <p>
+            <input
+              id="optE"
+              name="optHelpfulness"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input
+              id="optG"
+              name="optHelpfulness"
+              type="radio"
+              value="Good"
+            />(b) Good
+            <input
+              id="optF"
+              name="optHelpfulness"
+              type="radio"
+              value="Fair"
+            />(c) Fair
+            <input
+              id="optNA"
+              name="optHelpfulness"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+          <label for="Courtesy"
+            >3. <b>Courtesy and Respect</b> for all students?</label
+          >
+          <p>
+            <input
+              id="optE"
+              name="optCourtesy"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input id="optG" name="optCourtesy" type="radio" value="Good" />(b)
+            Good
+            <input id="optF" name="optCourtesy" type="radio" value="Fair" />(c)
+            Fair
+            <input
+              id="optNA"
+              name="optCourtesy"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+          <label for="Communication">4. <b>Communication</b> skills?</label>
+          <p>
+            <input
+              id="optE"
+              name="optCommunication"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input
+              id="optG"
+              name="optCommunication"
+              type="radio"
+              value="Good"
+            />(b) Good
+            <input
+              id="optF"
+              name="optCommunication"
+              type="radio"
+              value="Fair"
+            />(c) Fair
+            <input
+              id="optNA"
+              name="optCommunication"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+          <label for="Performance">5. Overall <b>performance?</b></label>
+          <p>
+            <input
+              id="optE"
+              name="optPerformance"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input
+              id="optG"
+              name="optPerformance"
+              type="radio"
+              value="Good"
+            />(b) Good
+            <input
+              id="optF"
+              name="optPerformance"
+              type="radio"
+              value="Fair"
+            />(c) Fair
+            <input
+              id="optNA"
+              name="optPerformance"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><b>Course:</b></legend>
+          <label for="CourseMat"
+            >6. How would you rate the <b>course materials</b>?</label
+          >
+          <p>
+            <input
+              id="optE"
+              name="optCourseMat"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input id="optG" name="optCourseMat" type="radio" value="Good" />(b)
+            Good
+            <input id="optF" name="optCourseMat" type="radio" value="Fair" />(c)
+            Fair
+            <input
+              id="optNA"
+              name="optCourseMat"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+          <label for="Expectations"
+            >7. How much did this course meet your <b>expectations</b>?</label
+          >
+          <p>
+            <input
+              id="optE"
+              name="optExpectations"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input
+              id="optG"
+              name="optExpectations"
+              type="radio"
+              value="Good"
+            />(b) Good
+            <input
+              id="optF"
+              name="optExpectations"
+              type="radio"
+              value="Fair"
+            />(c) Fair
+            <input
+              id="optNA"
+              name="optExpectations"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+          <label for="CourseOverall"
+            >8. How would you rate this course (<b>overall</b>)?</label
+          >
+          <p>
+            <input
+              id="optE"
+              name="optCourseOverall"
+              type="radio"
+              value="Excellent"
+            />(a) Excellent
+            <input
+              id="optG"
+              name="optCourseOverall"
+              type="radio"
+              value="Good"
+            />(b) Good
+            <input
+              id="optF"
+              name="optCourseOverall"
+              type="radio"
+              value="Fair"
+            />(c) Fair
+            <input
+              id="optNA"
+              name="optCourseOverall"
+              type="radio"
+              value="Not Satisfactory"
+            />(d) Not Satisfactory
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><b>General Information:</b></legend>
+          <label for="CourseOutline"
+            >9. Was the <b>course outline</b> reviewed/explained at the
+            beginning of your course?</label
+          >
+          <p>
+            <input
+              id="optYes"
+              name="optCourseOutline"
+              type="radio"
+              value="Yes"
+            />(a) Yes
+            <input
+              id="optNo"
+              name="optCourseOutline"
+              type="radio"
+              value="No"
+            />(b) No
+            <input
+              id="optNotSure"
+              name="optCourseOutline"
+              type="radio"
+              value="Not Sure"
+            />(c) Not Sure
+          </p>
+          <label for="Recommend"
+            >10. Would you <b>recommend</b> this course to a friend with the
+            same interests?</label
+          >
+          <p>
+            <input
+              id="optYes"
+              name="optRecommend"
+              type="radio"
+              value="Yes"
+            />(a) Yes
+            <input id="optNo" name="optRecommend" type="radio" value="No" />(b)
+            No
+            <input
+              id="optNotSure"
+              name="optRecommend"
+              type="radio"
+              value="Not Sure"
+            />(c) Not Sure
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend><b>Any Other Comments:</b></legend>
+          <label for="BestThing"
+            >11. What is the <b>best thing</b> about this course?</label
+          >
+          <br />
+          <textarea id="txtBestThing" cols="50" name="txtBestThing" rows="8">
+Type your response here</textarea
+          >
+          <br />
+          <label for="Improve"
+            >12. How could we <b>improve</b> this course?</label
+          >
+          <br />
+          <textarea id="txtImprove" cols="50" name="txtImprove" rows="8">
+Type your response here</textarea
+          >
+          <br />
+          <label for="Other">13. Other</label>
+          <br />
+          <textarea id="txtOther" cols="50" name="txtOther" rows="12">
+Type your reponse here</textarea
+          >
+        </fieldset>
+        <p>
+          <input name="btnSubmit" type="submit" value="Submit" />
+
+          <input name="btnReset" type="reset" value="Clear" />
+        </p>
+        <h4><em>Thank you! We pay attention to your feedback!</em></h4>
+        <h6>
+          &copy;&nbsp;&nbsp; Copyright Jeremy Fernandez Student #: 301076715 -
+          COMP213 Winter 2023 Assignment 4
+        </h6>
+      </form>
+    </div>
+  </body>
+</html>
